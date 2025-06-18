@@ -107,10 +107,11 @@ body {
 }
 @media (max-width: 640px) {
     .text--h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     .container {
-        max-width: 600px;
+        max-width: 580px;
+        padding: 0 35px;
     }
     .faq__list {
         flex-wrap: wrap;
