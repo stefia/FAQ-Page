@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Be Vietnam Pro", sans-serif;
+    color: #ECEDF0;
+    background-color: #12111F;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.text--h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #CDD5E0;
+}
+.text--label {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.text--body {
+    font-size: 1rem;
+    color: #CDD5E0;
+}
+.text--button {
+    font-size: 0.875rem;
+}
+
+
+.faq__title-wrapper {
+    background-image: url(resources/faq-title-bg@2x-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+}
+.faq__title,
+.faq__subtitle,
+.faq__name {
+    text-align: center;
+    margin: 0 auto;
+}
+.faq__title {
+    padding: 72px 0 92px;
+    max-width: 500px;
+}
+.faq__text {
+    margin: 16px 0 40px;
+}
+.faq__list,
+.overview__list {
+    list-style: none;
+}
+.faq__list {
+    display: flex;
+    gap: 24px;
+    max-width: 670px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    justify-content: center;
+}
+.faq__item {
+    padding: 8px 20px;
+}
+.faq__item,
+.overview__question {
+    cursor: pointer;
+}
+.faq__item--active {
+    border-radius: 20px;
+    background-color: #CDD5E020;
+}
+.faq__name,
+.overview__question {
+    all: unset;
+}
+.overview__question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.overview__item {
+    padding: 28px 32px;
+}
+.overview__item.active {
+    background-color: #CDD5E020;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.overview__answer {
+    display: none;
+    margin-top: 8px;
+}
+.overview__answer.show {
+    display: block;
+}
+
+.arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+.rotate {
+    transform: rotate(180deg);
+}
