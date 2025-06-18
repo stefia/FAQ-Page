@@ -15,7 +15,6 @@ body {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
-
 }
 
 .text--h1 {
@@ -59,7 +58,6 @@ body {
 .faq__list {
     display: flex;
     gap: 24px;
-    max-width: 670px;
     margin: 0 auto;
     margin-bottom: 80px;
     justify-content: center;
@@ -100,11 +98,22 @@ body {
 .overview__answer.show {
     display: block;
 }
-
 .arrow {
     display: inline-block;
     transition: transform 0.3s ease;
 }
 .rotate {
     transform: rotate(180deg);
+}
+@media (max-width: 640px) {
+    .text--h1 {
+        font-size: 2rem;
+    }
+    .container {
+        max-width: 600px;
+    }
+    .faq__list {
+        flex-wrap: wrap;
+        width: 400px;
+    }
 }
